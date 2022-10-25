@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de Contraseñas</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="pw-container">
+<div class="pw-header">
+<div class="pw">
+<span id="pw"> Password</span>
+<button id="copy">Copiar</button>
+</div>
+</div>
+<div class="pw-body">
+<div class="form-control">
+<lable for="length">Largo de Password</lable>
+<input id="len" value="10" type="number" min="8" max="30">
+</div>
+<div class="form-control">
+<lable for="upper">Contiene Mayusculas</lable>
+<input id="upper" type="checkbox">
+</div>
+<div class="form-control">
+<lable for="lower">Contiene minusculas</lable>
+<input id="lower" type="checkbox">
+</div>
+<div class="form-control">
+<lable for="number">Contiene numeros </lable>
+<input id="number" type="checkbox">
+</div>
+<div class="form-control">
+<lable for="symbol">Contiene simbolos</lable>
+<input id="symbol" type="checkbox">
+</div>
+<button class="generate" id="generate">Generar Password</button>
+</div>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
